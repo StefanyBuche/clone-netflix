@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @media(max-width:500px){
+      #cx_tres{
+        flex-direction: column;
+      }
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+    }
+
+    body {
+      background-image: url(WhatsApp\ Image\ 2023-08-22\ at\ 22.24.07.jpeg);
+      color: white;
+      height: 90vh;
+    }
+    body,h1,p{
+      font-family: sans-serif;
+    }
+
+    #cx_topo {
+      background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+      padding: 2%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #cx_marca {
+      color: red;
+      margin: 5px;
+      font: 30px sans-serif;
+      font-weight: bold;
+    }
+
+    #cx_dois {
+      display: flex;
+    }
+
+    #cx_idioma {
+      color: rgb(255, 255, 255);
+      margin: 2px 10px;
+      background: black;
+    }
+
+    #cx_entrar {
+      margin: 2px 10px ;
+      padding: 0px 10px;
+      border-radius: 5px;
+      background-color: rgb(255, 0, 0);
+      border: 2px;
+      font: 16px sans-serif;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+    main{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      align-items: center;
+      gap: 10px;
+    }
+    #cx_tres{
+      display: flex;
+      width: 70%;
+      gap: 3px;
+      align-items: center;
+      max-width: 500px;
+    }
+    #cx_tres input, #cx_tres button{
+      height: 56px;
+      border-radius: 5px;
+    }
+    #cx_tres input{
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.671);
+      color: white;
+      border: rgb(0, 0, 0);
+      padding-left: 10px;
+    }
+    #cx_tres button{
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      width: 150px;
+      border: red;
+    }
+    main h1{
+      text-align: center;
+      font-weight: 800;
+    }
+    main p{
+      text-align: center;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div id="cx_topo">
+
+    <div id="cx_marca">
+      <p>Netflix</p>
+    </div>
+    <div id="cx_dois">
+      <select id="cx_idioma" name="Idioma">
+        <option value="portugues">Português</option>
+        <option value="ingles">Inglês</option>
+        <option value="espanhol">Espanhol</option>
+      </select>
+
+      <div id="cx_entrar">
+        <p>Entrar</p>
+      </div>
+    </div>
+
+  </div>
+  <main>
+      <h1>
+        Filmes, séries e muito mais, sem limites
+      </h1>
+      <p>Assista onde quiser. Cancele quando quiser.</p><br>
+      <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+      <div id="cx_tres">
+        <input type="email" placeholder="E-mail">
+        <button>Vamos lá</button>
+      </div>
+  </main>
+</body>
+
+</html>
